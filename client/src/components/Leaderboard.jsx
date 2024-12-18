@@ -32,7 +32,15 @@ export const Leaderboard = ({ leaderboardData }) => {
           </p>
         </div>
 
-        <div className="bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+        <style>
+          {`
+            .border-pulse { animation: borderPulse 1.5s ease-in-out infinite; }
+          `}
+        </style>
+        <div
+          className={`bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border-2 transition-all duration-300 border-pulse border-indigo-500
+          }`}
+        >
           <div className="divide-y divide-gray-100">
             <TransitionGroup>
               {leaderboardData.map((user, index) => (
@@ -40,11 +48,13 @@ export const Leaderboard = ({ leaderboardData }) => {
                   <div
                     className={`flex items-center p-6 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-lg ${
                       index < 3
-                        ? "bg-gradient-to-r from-purple-50/50 to-blue-50/50"
+                        ? "bg-gradient-to-r from-purple-300/40 to-blue-300/40"
                         : ""
                     }
                       ${index === 0 ? "bg-yellow-50/70" : ""}
-                      hover:bg-white/90 hover:translate-x-1`}
+                      hover:bg-white/90 hover:translate-x-1 ${
+                        user.rankChange || ""
+                      }`}
                   >
                     <div className="flex-shrink-0 w-12 flex justify-center">
                       {getPositionIcon(index)}
