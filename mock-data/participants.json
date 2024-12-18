@@ -2,49 +2,49 @@
   {
     "id": 1,
     "name": "Sarah Johnson",
-    "score": 25,
+    "score": 646,
     "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
   },
   {
     "id": 2,
     "name": "Michael Chen",
-    "score": 30,
+    "score": 622,
     "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
   },
   {
     "id": 3,
     "name": "Emma Davis",
-    "score": 45,
+    "score": 694,
     "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
   },
   {
     "id": 4,
     "name": "James Wilson",
-    "score": 60,
+    "score": 654,
     "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
   },
   {
     "id": 5,
     "name": "Lisa Anderson",
-    "score": 75,
+    "score": 628,
     "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
   },
   {
     "id": 6,
     "name": "David Taylor",
-    "score": 85,
+    "score": 681,
     "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6"
   },
   {
     "id": 7,
     "name": "Sophie Brown",
-    "score": 90,
+    "score": 610,
     "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb"
   },
   {
     "id": 8,
     "name": "Robert Martinez",
-    "score": 100,
+    "score": 600,
     "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
   }
 ]

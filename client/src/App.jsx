@@ -11,15 +11,6 @@ function App() {
   const [leaderboardData, setLeaderboardData] = useState([]);
   const { sendMessage, listenToEvent } = useSocket("http://localhost:5174");
 
-  // useEffect(() => {
-  //   setCount(count + 1);
-  //   //socket.emit('ping', count);
-  // }, []);
-
-  // useEffect(() => {
-  //   socket.emit("ping", count);
-  // }, [count]);
-
   useEffect(() => {
     // Listen for incoming messages
     listenToEvent("message", (message) => {

@@ -26,9 +26,7 @@ socketIO.on('connection', (socket) => {
   // Immediately send the current leaderboard
   socket.emit('leaderboard_update', computeLeaderboard());
 
-  socket.on('message', (message) => {
-    console.log(`${socket.id}  ${message}`);
-  })
+
 });
 
 
